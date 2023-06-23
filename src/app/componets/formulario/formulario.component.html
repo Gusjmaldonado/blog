@@ -1,0 +1,36 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="row">
+        <div>
+            <label class="form-label">Titulo</label>
+            <input class="form-control" type="text" formControlName="titulo">
+        </div>
+        <div>
+            <label class="form-label">Texto</label>
+            <textarea class="form-control" aria-label="With textarea" formControlName="texto"></textarea>
+        </div>
+        <div>
+            <label class="form-label">Autor</label>
+            <input class="form-control" type="text" formControlName="autor">
+        </div>
+        <div>
+            <label class="form-label">Fecha</label>
+            <input class="form-control" type="text" formControlName="fecha">
+        </div>
+        <div>
+            <label class="form-label">Categoria</label>
+            <select class="form-select" formControlName="categoria">
+                <option value="mural">Mural</option>
+                <option value="bomba">Bomba</option>
+                <option value="tag">Tags</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">imagen</label>
+            <input class="form-control" type="text" formControlName="imagen">
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto">
+            <input type="submit" value="Enviar" class="btn btn-light mt-3">
+        </div>
+
+    </div>
+</form>

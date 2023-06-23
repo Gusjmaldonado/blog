@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url(https://i.pinimg.com/600x315/dd/50/6e/dd506e263d688490c04b71b3d6ef518c.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: #999;
+    background-blend-mode: multiply;
+    color: white
+}
